@@ -13,28 +13,30 @@ header {
   justify-content: center;
 }
 .navbar {
-  width: 1290px;
+  width: 1280px;
   padding: 0px auto;
   display: flex;
   justify-content: space-between;
+}
+.navbar .icon{
+  display: none
 }
 .navbar .logo,
 .navbar table,
 .navbar ul {
   padding: 0px 20px;
 }
-.navbar table a{
+.navbar table a {
   color: #707070;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
 }
-
-.navbar table th a{
+.navbar table th a {
   font-size: 20px;
   color: #0ccb97;
   font-weight: bold;
-  padding: 0px ;
+  padding: 0px;
   letter-spacing: 1.5px;
 }
 .navbar table {
@@ -43,7 +45,6 @@ header {
 }
 .navbar td {
   color: #707070;
-  text-shadow: #000000;
   padding-right: 50px;
   letter-spacing: 1px;
 }
@@ -89,11 +90,8 @@ header {
   font-weight: normal;
   padding-top: 5px;
 }
-footer {
-  background-color: turquoise;
-}
 .contenedor {
-  width: 1290px;
+  width: 1280px;
   margin: 20px auto 30px;
 }
 .App img {
@@ -280,4 +278,267 @@ footer .derecha a {
 .especialidades .related-post a {
   color: #363535;
   text-decoration: none;
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1280px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar table {
+    margin-left: 100px;
+  }
+  .contenedor {
+    width: auto;
+  }
+  .App > img {
+    max-width: 100%;
+    height: auto;
+  }
+  .especialidades {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px 0px 100px 0px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(160px, 1fr);
+    overflow-x: auto;
+  }
+  footer .links li {
+    padding: 5px;
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  footer table {
+    margin: 10px 20px 5px 20px;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  header {
+    height: 60px;
+    background-color: #fbf9f9;
+    border-bottom: 1px solid rgba(44, 44, 44, 0.1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+  }
+  .navbar table {
+    display: none;
+  }
+  .navbar ul button {
+    display: none;
+  }
+  .navbar .icon {
+    display: block;
+    font-size: 32px;
+    font-weight: 100px;
+    margin-left: 20px;
+    color: #707070;
+  }
+  .contenedor {
+    width: auto;
+  }
+  .titulo form {
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+  }
+  .contenedor .titulo #search1,
+  .contenedor .titulo #search2 {
+    padding: 0px;
+    margin: 10px;
+    width: 496px;
+    height: 60px;
+    font-size: 16px;
+    text-indent: 60px;
+    border-radius: 10px;
+  }
+  .titulo form button {
+    padding: 0px;
+    margin: 10px;
+    width: 496px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .App > img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+  .contenedor .titulo h1 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .contenedor .titulo h2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .contenedor .App .texto {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    margin-top: -25%;
+    margin-bottom: 90px;
+    padding-left: 40px;
+    margin-left: -100px;
+  }
+  .contenedor .App .texto h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: -100px;
+  }
+  .contenedor .App .texto h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: -50px;
+  }
+  .contenedor .App .boton {
+    margin-top: -15px;
+    margin-left: -170px;
+  }
+  .Turnos{
+    display: flex;
+    flex-flow: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .Turnos h1,
+  .Turnos h2{
+    margin: 0px 0px 10px 105px;
+    float: left;
+  }
+  .Turnos h1{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .Turnos h2{
+    font-size: 12px;
+    width: 229px;
+    height: 32px;
+  }
+  .especialidades{
+    width: 555px;
+    height: 111px;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10px auto 10px;
+  }
+  .especialidades .related-post{
+    width: 123px;
+    height: 110px;
+    box-shadow: 1px 4px 4px #bbbbbb ;
+  }
+  .especialidades .related-post a img{
+    width: 123px;
+    height: 66px;
+  }
+  footer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  footer .links li{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  footer table{
+    margin: 10px 20px 5px 20px;
+  }
+  footer table .links{
+    margin: 10px;
+    letter-spacing: 0px;
+  }
+  footer table tr td{
+    display: block;
+  }
+  footer table .medio{
+    width: max-content;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+  footer table .derecha{
+    justify-content: center;
+  }
+}
+@media screen and (max-device-width: 375px){
+  .contenedor .titulo h1{
+    font-size: 15px;
+    text-align: left;
+    padding: 0px 20px;
+  }
+  .contenedor .titulo h2{
+    padding-left: 10px;
+    font-size: 11px;
+    text-align: left;
+  }
+  .contenedor .titulo #search1,
+  .contenedor .titulo #search2,
+  .titulo form button { 
+    width: 335px;
+  }
+  .App>img{
+    height: 150px;
+  }
+  .contenedor .App .texto{
+    height: 100%;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    margin-top: -40%;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .contenedor .App .texto h1 {
+    font-size: 24px;
+    padding: 0px;
+    margin: 5px;
+  }
+  .contenedor .App .texto h2 {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px;
+    margin: 10px 0px;
+  }
+  .contenedor .App .texto .boton{
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .Turnos h1,
+  .Turnos h2{
+    margin-left: 35px;
+  }
+  .especialidades {
+    width: 300px;
+    height: 111px;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0px auto 0px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(123px,1fr);
+    overflow-x: auto;
+  }
+  footer table,
+  footer table tr,
+  footer table td{
+    padding: 0px;
+  }
+
+
 }
